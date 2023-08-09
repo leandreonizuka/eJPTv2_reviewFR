@@ -88,6 +88,6 @@ L'intégration d'une section dédiée au reporting dans la certification offrira
 
 ## Mot de Fin
 
-La préparation à la certification de Test de Pénétration exige une approche holistique. Des cours aux CTF en passant par l'expérience de l'examen, chaque élément contribue à développer des compétences solides en matière de sécurité informatique. Gardez à l'esprit que la persévérance, la pratique et la curiosité sont des atouts précieux dans ce parcours.
+La préparation à la certification de Ejptv2 exige une approche holistique. Des cours aux CTF en passant par l'expérience de l'examen, chaque élément contribue à développer des compétences solides en matière de sécurité informatique. Gardez à l'esprit que la persévérance, la pratique et la curiosité sont des atouts précieux dans ce parcours.
 
 Bonne chance dans votre préparation et votre réussite à la certification !! 
