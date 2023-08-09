@@ -11,7 +11,7 @@
 - Ce qui manque à la certification
 
 
-### Les cours et Le PATH
+## Les cours et Le PATH
 
 Après votre paiement, vous obtiendrez l'acces au PATH 'Penetration Tester student' de l'INE. Les cours sont dirigés par Josh Mason, mais principalement enseignés par Alexi Hamed, également connu sous le nom de @Hackersploit. Le parcours dure 148 heures et est très complet. Vous aborderez tous les aspects fondamentaux du pentesting à travers des vidéos explicatives, suivies de travaux pratiques dans un laboratoire pour mettre en pratique ce que vous venez d'apprendre. Vous disposerez d'un fichier PDF pour chaque laboratoire, afin de prendre des notes. Personnellement, j'ai enregistré toutes mes notes dans une base de données personnelle, car c'est ma méthode de travail. Je recommande l'utilisation de l'outil Notion pour ce type de prise de notes.
 
