@@ -60,3 +60,34 @@ Pendant la dernière semaine précédant l'examen, j'ai concentré mes efforts s
 - [Stapler 1](https://www.vulnhub.com/entry/stapler-1,150/) 
 - [My Web Server](https://www.vulnhub.com/entry/my-web-server-1,463/)
 
+## Expérience de l'Examen de Certification
+
+L'environnement de l'examen est basé sur Guacamole. Mon environnement était stable, mais il y a des contraintes à considérer. Par exemple, j'ai voulu me connecter à un serveur via Evil-WinRM, mais l'outil n'était pas installé et l'environnement n'est pas connecté à Internet, ce qui signifie qu'il n'y avait pas de possibilité d'installer de paquets. Le manque d'accès VPN pour utiliser nos propres machines d'attaque a été une restriction, ce qui est dommage. J'ai ressenti des limitations dans mes choix d'attaques. Vous avez une marge de temps confortable, car vous disposez de 48 heures pour répondre aux questions, qui parfois vous aident à progresser dans le laboratoire.
+
+Le contexte de l'examen est le suivant : vous vous trouvez dans une DMZ avec plusieurs hôtes à l'intérieur. Vous devez trouver un moyen d'accéder à plusieurs d'entre eux (dans mon cas, il s'agissait de 4 serveurs, dont 3 Windows et 1 Linux). En utilisant l'un de ces serveurs, vous devez établir une connexion avec Meterpreter pour pivoter sur un réseau interne (dans mon cas, un réseau Linux).
+
+En vérité, la plupart des éléments de l'examen auraient pu être réalisés avec Metasploit, du moins une grande partie. Cependant, ce n'est pas toujours avantageux, car certains modules de Metasploit peuvent échouer, et vous ne pouvez pas toujours compter sur des preuves de concept depuis GitHub comme vous le feriez habituellement. Vous devez être capable de faire fonctionner vos modules. De plus, le fait de ne pas pouvoir copier-coller entre votre ordinateur hôte et l'environnement Guacamole ajoute une complexité. En ce qui concerne les vulnérabilités, la plupart d'entre elles étaient couvertes dans les cours, mais certaines ne l'étaient pas. C'est ici que l'expérience acquise lors des CTF m'a été d'une grande aide, car j'ai pu exploiter des vulnérabilités que je n'avais pas vues pendant le parcours.
+
+Au total, j'ai passé 7 heures pour l'examen et j'ai obtenu la certification avec un score de 91% (le seuil de réussite est de 70%).
+
+Mes conseils sont simples... Brute forcer moi ces services xD ! Plus sérieusement, l'examen se rapproche davantage de la réalité (du moins je le pense, n'ayant jamais fait de missions de pentesting). Ce n'est pas un CTF. Suivez bien votre méthodologie, prenez le temps de scanner minutieusement votre cible à l'aide de scripts Nmap pour obtenir autant d'informations que possible. Prenez des notes sur vos résultats, car il y a de nombreux hôtes à exploiter, et vous pourriez vous perdre dans les informations.
+
+En ce qui concerne le pivoting, assurez-vous de repérer le point de pivot en consultant les cartes réseau à l'aide d'une commande comme `ifconfig` (dans le cas de Meterpreter). Il y aura forcément un point de pivot, ne le manquez pas. Essayez de tirer parti de Metasploit autant que possible, car les questions peuvent souvent tourner autour de Metasploit, ce qui vous aidera à répondre.
+
+En termes de post-exploitation, n'oubliez pas de mettre en place de la persistance. Cela peut sembler évident, mais cela peut vous faire gagner du temps. J'ai personnellement gagné du temps en fermant mon navigateur Firefox qui chargeait un reverse shell. Heureusement, grâce à la persistance, je n'ai pas eu à refaire toute l'exploitation. Pour l'élévation des privilèges sur les hôtes Windows, dans mon cas je n'ai pas eu a élévers mes privilges, mais pour le système Linux, j'ai du passer par pluseiure phase d'élévation. N'oubliez pas de réutiliser les mots de passe que vous avez trouvés pour vous connecter en tant qu'utilisateur local.
+
+Pour finir, utilisez les questions fournies comme des indices. À un moment donné, j'étais bloqué dans ma recherche du point de pivot, mais une question m'a orienté vers la vulnérabilité à exploiter, ce qui m'a permis de progresser.
+
+## Lacune dans la Certification
+
+Une lacune notable dans la certification réside dans l'absence d'une section consacrée au reporting. Je suis d'avis que le pentest ne se limite pas seulement à l'exploitation, mais également à la communication des résultats. Un rapport de pentest revêt une importance capitale, car il documente les vulnérabilités découvertes, les méthodes utilisées pour les exploiter, ainsi que les recommandations pour les résoudre. Il constitue une preuve concrète du travail accompli et de la valeur ajoutée en matière de sécurité.
+
+Dans le contexte professionnel, les clients et les employeurs attendent généralement un rapport détaillé exposant clairement les problèmes de sécurité identifiés, ainsi que les mesures correctives suggérées. Un rapport bien structuré facilite la compréhension des enjeux et permet de prendre des décisions éclairées pour renforcer la posture de sécurité.
+
+L'intégration d'une section dédiée au reporting dans la certification offrirait aux apprenants l'occasion de se familiariser avec la rédaction de rapports de pentest, un aspect fondamental de la profession de pentester dans la vie réelle. Cette inclusion pourrait également renforcer la compréhension de l'importance de la communication claire et concise des résultats de sécurité.
+
+## Mot de Fin
+
+La préparation à la certification de Test de Pénétration exige une approche holistique. Des cours aux CTF en passant par l'expérience de l'examen, chaque élément contribue à développer des compétences solides en matière de sécurité informatique. Gardez à l'esprit que la persévérance, la pratique et la curiosité sont des atouts précieux dans ce parcours.
+
+Bonne chance dans votre préparation et votre réussite à la certification !! 
