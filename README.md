@@ -1,6 +1,6 @@
 
 # eJPTv2 Review FR
-## cette review est en troix parties
+## cette review est en quatre parties
 
 - Les cours et le PATH 
 
